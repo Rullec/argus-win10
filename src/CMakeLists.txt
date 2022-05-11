@@ -1,11 +1,10 @@
-
 find_package(glfw3 QUIET REQUIRED)
 find_package(OpenGL QUIET REQUIRED)
-find_package(GLEW QUIET REQUIRED)
+
 
 file(GLOB DISPLAY_SOURCES "display/*")
 add_library(display ${DISPLAY_SOURCES})
-target_link_libraries(display ${OPENGL_LIBRARIES} glfw ${GLEW_LIBRARIES})
+target_link_libraries(display ${OPENGL_LIBRARIES} glfw glew32)
 
 file(GLOB INTEGRATORS_SOURCES "integrators/*")
 add_library(integrators ${INTEGRATORS_SOURCES})

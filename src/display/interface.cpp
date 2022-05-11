@@ -5,7 +5,7 @@
 #include "interface.h"
 #include <sstream>
 #include <glm/gtc/type_ptr.hpp>
-
+#define M_PI 3.141592
 namespace display {
 
 struct MouseInfo {

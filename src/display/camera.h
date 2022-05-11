@@ -12,11 +12,13 @@
 #include <glm/glm.hpp>
 
 namespace display {
-
+#undef near
+#undef far
 class Camera {
 private:
     // double distance;
     double fov;
+
     double near, far;
     int winWidth, winHeight;
     glm::vec3 worldUp;

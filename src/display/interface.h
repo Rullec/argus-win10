@@ -9,7 +9,7 @@
 #include "camera.h"
 #include "shader.h"
 #include "timestep.h"
-
+#include <cmath>
 namespace display {
 
 #define WIDTH 1080
