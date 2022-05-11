@@ -3,8 +3,9 @@ find_package(OpenGL QUIET REQUIRED)
 
 
 file(GLOB DISPLAY_SOURCES "display/*")
+add_compile_definitions(GLEW_STATIC)
 add_library(display ${DISPLAY_SOURCES})
-target_link_libraries(display ${OPENGL_LIBRARIES} glfw glew32)
+target_link_libraries(display ${OPENGL_LIBRARIES} glfw glew32s)
 
 file(GLOB INTEGRATORS_SOURCES "integrators/*")
 add_library(integrators ${INTEGRATORS_SOURCES})
